@@ -17,6 +17,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Link } from 'react-router-dom';
 import DropListHelpers from './list/DropListHelpers';
 
+import Pic from './img/logo-rsb.png'
+
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
@@ -41,11 +43,12 @@ export default function Appbar(props) {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" bg="white">
                 <Container>
                     <Toolbar >
                         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                            <MenuIcon />
+                            {/* <MenuIcon /> */}
+                            <img src={Pic} alt="pic" width="50px" height="50px" style={{borderRadius:'50%' }}/>
                         </IconButton>
 
                         <Button color="inherit"> <Link to="/" className={classes.link}>Офисы</Link></Button>

@@ -61,7 +61,7 @@ export default function DropListHelpers() {
                 color="inherit"
                 
             >
-                Tools&#748;
+                Справочники&#748;
         </Button>
             <Popper
                 open={open}
